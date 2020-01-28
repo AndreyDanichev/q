@@ -1,0 +1,55 @@
+.about {
+	margin: 0;
+	padding: 60px 0 100px;
+	
+	.information {
+		margin-top: 78px;
+		text-align: center;
+		
+		h2 {
+			color: @mainColor;
+			font-size: 40px;
+			line-height: 50px;
+		}
+
+		p {
+			margin: 16px 0 0;
+			padding: 0;
+			font-size: 14px;
+			line-height: 26px;
+			letter-spacing: 0.1px;
+		}
+	}
+}
+
+.counter {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 0 11%;
+	
+	&__item {
+		text-align: center;
+		width: 100%;
+		max-width: 300px;
+		
+		&-num {
+			color: @altColor;
+			font-family: 'Kelson Sans Bold';
+			font-size: 60px;
+			line-height: 75px;
+		}
+
+		&-str {
+			width: 50%;
+			margin: 5px 0 0;
+			padding: 0;
+			margin-left: auto;
+			margin-right: auto;
+			color: @descColor;
+			font-family: 'Montserrat Regular';
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+}

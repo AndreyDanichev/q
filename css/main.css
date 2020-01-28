@@ -1,0 +1,455 @@
+/*
+ * Box-sizing-model
+ */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Responsive images
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+ * Cursor change on hover on Buttons
+*/
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+html,
+body {
+  min-width: 320px;
+}
+html {
+  font-size: 10px;
+  line-height: 1.4;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Noto Sans';
+}
+p,
+a {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  font-family: 'Montserrat Regular';
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kelson Sans Bold';
+}
+a {
+  text-decoration: none;
+  color: #1e52b9;
+  cursor: pointer;
+}
+.section {
+  padding: 40px 10px;
+}
+.section__wrapper {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-flow: column;
+}
+.section__heading {
+  margin: 0;
+  padding: 0;
+  color: #1e52b9;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 1.3px;
+  font-size: 18px;
+  text-align: center;
+}
+.bg {
+  background-color: #C0C0C0;
+  background-image: url("../img/bg/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+button {
+  outline: none !important;
+}
+.button {
+  margin: 0;
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+  min-width: 93px;
+  z-index: 1;
+}
+.button a {
+  display: block;
+  color: #FFF;
+  font-size: 17px;
+  padding: 8px 18px;
+}
+.header__main-reg {
+  margin-top: 27px;
+  background-color: #e61314;
+  border: none;
+}
+.header__main-reg a {
+  padding: 16px 29px;
+  font-size: 16px;
+}
+.information__button {
+  margin: 28px 0 0 13%;
+  background: #1e52b9;
+  border: none;
+}
+.information__button a {
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px 29px;
+}
+.school .information__button {
+  margin: 28px 0 0 0;
+}
+.registration .button {
+  background-color: #e61314;
+  border: none;
+}
+.registration .button a {
+  padding: 16px 29px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.slider {
+  margin: 60px 0 0 0;
+  padding: 0;
+  width: 900px;
+  overflow: visible;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slider__item {
+  width: 448px;
+  height: 300px;
+}
+.header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 540px;
+  position: relative;
+  overflow: hidden;
+}
+.header-bg {
+  background-color: #1e52b9;
+}
+.header__top {
+  background-color: #1e52b9;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 85px 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+.header__top-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__top-nav-item {
+  margin: 0 21px 8px;
+}
+.header__top-nav-item:first-child {
+  margin-left: -76px;
+}
+.header__top-nav-item:last-child {
+  margin-right: 0;
+}
+.header__top-nav a {
+  color: #FFF;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+}
+.header__top-login {
+  margin-bottom: 9px;
+}
+.header__top-login a {
+  letter-spacing: -0.3px;
+}
+.header__main {
+  margin: 85px 0 0;
+  padding: 0 0 0 85px;
+  width: 45%;
+  max-width: 570px;
+  margin-top: 85px;
+}
+.header__main h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kelson Sans Bold';
+  font-size: 40px;
+  line-height: 50px;
+  color: #FFF;
+}
+.header__main p {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  color: #FFF;
+  line-height: 18px;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  width: 86%;
+}
+.header__main img {
+  position: absolute;
+  bottom: 0px;
+  right: -96px;
+  width: 74%;
+  max-width: 1012px;
+}
+.about {
+  margin: 0;
+  padding: 60px 0 100px;
+}
+.about .information {
+  margin-top: 78px;
+  text-align: center;
+}
+.about .information h2 {
+  color: #1e52b9;
+  font-size: 40px;
+  line-height: 50px;
+}
+.about .information p {
+  margin: 16px 0 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+}
+.counter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0 11%;
+}
+.counter__item {
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+.counter__item-num {
+  color: #e61314;
+  font-family: 'Kelson Sans Bold';
+  font-size: 60px;
+  line-height: 75px;
+}
+.counter__item-str {
+  width: 50%;
+  margin: 5px 0 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: #707070;
+  font-family: 'Montserrat Regular';
+  font-size: 14px;
+  line-height: 18px;
+}
+.parents {
+  background-color: #f7f8fa;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 60px 0 52px;
+  overflow: hidden;
+}
+.parents .information,
+.parents .image {
+  flex: 1;
+}
+.parents .information__heading {
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 73px 0 17px -11px;
+}
+.parents .information__list {
+  margin: 0;
+  padding: 0 0 0 16%;
+  list-style-type: none;
+}
+.parents .information__list li {
+  font-family: 'Montserrat Regular';
+  color: #707070;
+  font-size: 14px;
+  line-height: 28px;
+  position: relative;
+}
+.parents .information__list li:before {
+  content: "\2022";
+  color: #e61314;
+  position: absolute;
+  font-size: 40px;
+  left: -22px;
+  bottom: 5px;
+}
+.school {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 60px 0 55px;
+  overflow: hidden;
+}
+.school .information,
+.school .image {
+  flex: 1;
+}
+.school .information {
+  order: 1;
+}
+.school .information__heading {
+  font-size: 40px;
+  line-height: 50px;
+  margin: 80px 0 17px;
+}
+.school .information__list {
+  margin: 0;
+  padding: 0 0 0 3.5%;
+  list-style-type: none;
+}
+.school .information__list li {
+  font-family: 'Montserrat Regular';
+  color: #707070;
+  font-size: 14px;
+  line-height: 28px;
+  position: relative;
+}
+.school .information__list li:before {
+  content: "\2022";
+  color: #e61314;
+  position: absolute;
+  font-size: 40px;
+  left: -22px;
+  bottom: 5px;
+}
+.confederation {
+  background-color: #f7f8fa;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 60px 0 53px;
+  overflow: hidden;
+}
+.confederation .information,
+.confederation .image {
+  flex: 1;
+}
+.confederation .information__heading {
+  font-size: 40px;
+  line-height: 50px;
+  margin: 167px 0 17px 12.5%;
+}
+.confederation .information__list {
+  margin: 0;
+  padding: 0 0 0 16%;
+  list-style-type: none;
+}
+.confederation .information__list li {
+  font-family: 'Montserrat Regular';
+  color: #707070;
+  font-size: 14px;
+  line-height: 28px;
+  position: relative;
+  letter-spacing: 0.1px;
+}
+.confederation .information__list li:before {
+  content: "\2022";
+  color: #e61314;
+  position: absolute;
+  font-size: 40px;
+  left: -22px;
+  bottom: 5px;
+}
+.best {
+  margin: 0;
+  padding: 101px 0 100px;
+  text-align: center;
+}
+.best h2 {
+  color: #1e52b9;
+  font-size: 40px;
+  line-height: 50px;
+}
+.registration {
+  background-color: #1e52b9;
+  color: #FFF;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 385px;
+}
+.registration h2 {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  line-height: 50px;
+}
+.registration p {
+  color: #FFF;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  margin-bottom: 40px;
+}

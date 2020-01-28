@@ -1,0 +1,8 @@
+@font-face {
+font-family: 'Kelson Sans Bold';
+src: url('KelsonSansBold.eot');
+src: url('KelsonSansBold.eot?#iefix') format('embedded-opentype'),
+url('KelsonSansBold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}

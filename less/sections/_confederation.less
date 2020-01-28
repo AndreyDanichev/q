@@ -1,0 +1,44 @@
+.confederation {
+	background-color: #f7f8fa;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 60px 0 53px;
+	overflow: hidden;
+	
+	.information, .image {
+		flex: 1;
+	}
+
+	.information {
+
+		&__heading {
+			font-size: 40px;
+			line-height: 50px;
+			margin: 167px 0 17px 12.5%;
+		}
+
+		&__list {
+			margin: 0;
+			padding: 0 0 0 16%;
+			list-style-type: none;
+			
+			li {
+				font-family: 'Montserrat Regular';
+				color: @descColor;
+				font-size: 14px;
+				line-height: 28px;
+				position: relative;
+				letter-spacing: 0.1px;
+				
+				&:before {
+					content: "\2022";
+					color: @altColor;
+					position: absolute;
+					font-size: 40px;
+					left: -22px;
+					bottom: 5px;
+				}
+			}
+		}
+	}
+}
